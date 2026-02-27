@@ -6,6 +6,10 @@ PathLayer is a graph-based referral optimization engine that computes:
 
 It runs as a static Next.js app with client-side graph computation and a deterministic synthetic dataset.
 
+## User Guide
+For product usage and workflow details, see:
+- [USER_GUIDE.md](/Users/jpdavalos/Documents/path-layer/USER_GUIDE.md)
+
 ## Stack
 - Next.js (App Router) + TypeScript
 - Tailwind CSS (dark-mode UI)
