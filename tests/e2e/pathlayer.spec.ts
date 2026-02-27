@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("core flow renders ranking, path details, and graph", async ({ page }) => {
+test("@smoke core flow renders ranking, path details, and graph", async ({ page }) => {
   await page.goto("/");
 
   await expect(page.getByText("PathLayer")).toBeVisible();

@@ -29,9 +29,25 @@ Open `http://localhost:3000`.
 
 ## Testing
 ```bash
+pnpm lint
 pnpm test:unit
+pnpm test:e2e:install
+pnpm test:e2e:smoke
 pnpm test:e2e
 ```
+
+- `pnpm test:e2e:install`: installs Playwright Chromium browser/deps for fresh environments.
+- `pnpm test:e2e:smoke`: runs only the tagged smoke e2e test(s) for fast validation.
+- `pnpm test:e2e`: runs the full end-to-end suite.
+
+## CI
+GitHub Actions workflow is defined at:
+- `.github/workflows/ci.yml`
+
+Execution policy:
+- Pull requests: `quality` + `e2e-smoke`
+- `main` branch pushes: `quality` + `e2e-smoke` + `e2e-full`
+- Nightly schedule (UTC): `e2e-full`
 
 ## Build and Static Export
 ```bash

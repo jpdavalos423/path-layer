@@ -151,7 +151,7 @@ export default function HomePage() {
     }
 
     setSelectedCandidateId(selectedCandidate.candidateId);
-  }, [selectedCandidate?.candidateId]);
+  }, [selectedCandidate]);
 
   const weightedPath = useMemo(() => {
     if (!computed || !selectedCandidate) {

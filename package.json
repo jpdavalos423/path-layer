@@ -10,6 +10,8 @@
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
+    "test:e2e:install": "playwright install --with-deps chromium",
+    "test:e2e:smoke": "playwright test --grep @smoke",
     "test:e2e": "playwright test",
     "generate:data": "tsx scripts/generate-dataset.ts",
     "validate:data": "tsx scripts/validate-dataset.ts"
@@ -21,6 +23,7 @@
     "reactflow": "11.11.4"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.4",
     "@playwright/test": "1.52.0",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.2.0",
@@ -29,6 +32,8 @@
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "autoprefixer": "10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.2.2",
     "jsdom": "26.0.0",
     "postcss": "8.5.3",
     "tailwindcss": "3.4.17",
