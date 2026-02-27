@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #05060b;
+  --panel: #111623;
+  --panel-2: #151d2f;
+  --text: #ebf5ff;
+  --text-dim: #8ca2bd;
+  --accent: #00fbff;
+  --accent-2: #ff8d2f;
+  --warn: #ff5f7e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-sans), "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 15% -10%, rgba(0, 251, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 90% 110%, rgba(255, 141, 47, 0.2), transparent 45%),
+    linear-gradient(180deg, #05060b 0%, #080d17 55%, #04070d 100%);
+}
+
+code,
+.font-mono {
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.path-edge-weighted {
+  animation: pulseLine 1.8s ease-in-out infinite;
+}
+
+.path-edge-shortest {
+  animation: pulseLine 2.1s ease-in-out infinite;
+}
